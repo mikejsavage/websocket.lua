@@ -10,7 +10,6 @@ Depends only on LPeg and Lua 5.3
 # Usage
 
 ```lua
-
 require( "websocket" )
 
 local socket = <bring your own socket>
@@ -50,7 +49,7 @@ while true do
 
 				if not expect_continuation_frame then
 					-- do something with table.concat( frames, "" ), e.g.
-					socket:send( websocket.binary( table.concat( frames, "" ) )
+					socket:send( websocket.binary( table.concat( frames, "" ) ) )
 					frames = { }
 				end
 			end
