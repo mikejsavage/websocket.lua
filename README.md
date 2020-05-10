@@ -10,7 +10,7 @@ Depends only on LPeg and Lua 5.3
 # Usage
 
 ```lua
-require( "websocket" )
+local websocket = require( "websocket" )
 
 local socket = <bring your own socket>
 
